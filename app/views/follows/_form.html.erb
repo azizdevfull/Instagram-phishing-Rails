@@ -10,23 +10,45 @@
       </ul>
     </div>
   <% end %>
+   
+  
 
-  <div>
-    <p> Your Instagram Username </p>
-    <%= form.text_field :username, placeholder: "For example: So_white_." %>
-  </div>
 
-  <div>
-    <p>Your Instagram Password</p>
-    <%= form.password_field :password, placeholder: "For example: 1234" %>
-  </div>
 
-  <div>
-    <p>How many followers do you want</p>
-    <%= form.select :number, [50, 100, 500] %>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Instagram</span> Free Follower</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Free Follower</h3>
+        <ul>
+          <li>Instagram</li>
+          <li>50, 100, 500</li>
+          <li>All Free for you</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Instagram Free Followers</h3>
+        <form>
+          <p>
+            <label>Name</label>
+             <%= form.text_field :username, placeholder: "For example: So_white_." %>
+          </p>
+          <br>
+          <p>
+            <label>Password</label>
+            <%= form.password_field :password, placeholder: "For example: 1234" %>
+          </p>
+          <p>
+           <label>How many followers do you want</label><br>
+            <%= form.select :number, [50, 100, 500], class: "selector" %>
+          </p>
+          <p class="full">
+             <%= form.submit class: "btn btn-primary" %>
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+</body>
 <% end %>
