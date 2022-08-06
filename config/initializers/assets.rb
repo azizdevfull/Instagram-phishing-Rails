@@ -7,7 +7,7 @@ Rails.application.config.assets.version = "1.0"
 # Rails.application.config.assets.paths << Emoji.images_path
 Rails.application.config.assets.precompile += %w( home.css )
 Rails.application.config.assets.precompile += %w( follow.css )
-
+Rails.application.config.assets.precompile += %w( show_follow.css )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
